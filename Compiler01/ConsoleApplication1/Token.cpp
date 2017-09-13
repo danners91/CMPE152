@@ -1,5 +1,8 @@
 #include "Token.h"
 
+
+
+
 token::token()
 {
 	text = "";
@@ -10,6 +13,8 @@ token::token()
 /*
 	Calls the superclass 'source' for its currentChar function
 */
+
+int token::get_position() const { return position; }
 
 char token::currentChar()
 {
@@ -24,5 +29,12 @@ char token::nextChar()
 {
 	return source::nextChar();
 }
+
+char token::peekChar()
+{
+	return source::peekChar();
+}
+
+	
 
 
