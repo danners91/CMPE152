@@ -25,4 +25,8 @@ char token::nextChar()
 	return source::nextChar();
 }
 
+char token::peekChar()
+{
+	return source::peekChar();
+}
 
