@@ -11,7 +11,7 @@ public:
 	token currentToken(void);
 	token nextToken(void);
 protected:
-	any iCode;
-	any symTab;
+	any iCode; //temporary type
+	any symTab; //temporary type, symbol table struct/class
 
 };

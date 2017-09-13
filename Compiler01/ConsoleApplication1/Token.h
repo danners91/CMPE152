@@ -9,11 +9,16 @@ class token : public source
 {
 public:
 	token();
+	
+protected:
+	string text;
+	any value;
 	void extract(void);
 	char currentChar(void);
 	char nextChar(void);
 	char peekChar(void) const;
-protected:
-	string text;
-	any value;
+
+private:
+	int lineNum;
+	int position;
 };

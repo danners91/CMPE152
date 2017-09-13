@@ -1,19 +1,66 @@
 #include "Source.h"
 
-source::source()
+source::source(string fileName)
 {
 	line = "";
 	lineNum = 0;
 	currentPos = 0;
+
+	/*Attempts to open the file with name 'fileName'*/
+	// ****** REMEMBER TO CLOSE LATER *******
+	try
+	{
+		file.open(fileName);
+	}
+	catch (const ifstream::failure& e)
+	{
+		cout << "Failed to open " << fileName << endl;
+	}
 }
 
-char source::currentChar() const
+/*return current character without changing current position*/
+char source::currentChar(void) const
 {
 	return '0';
 }
 
-char source::nextChar()
+/*returns the next char and increment the current position*/
+char source::nextChar(void)
 {
 	this->currentPos++;
 	return '0';
 }
+
+
+/*Returns variable of the line number*/
+int source::getLineNum(void)
+{
+	return this->lineNum;
+}
+
+/*Return variable of the current position*/
+int source::getCurrentPos(void)
+{
+	return this->currentPos;
+}
+
+/*
+Reads the file and sends the string to the token class
+*/
+/*void scanner::scanFile(string fileName)
+{
+token toke;
+ifstream file;
+
+try {
+file.open("javatest.in");
+while (getline(file, line))
+{
+
+}
+}
+catch (const ifstream::failure& e)
+{
+cout << "Cannot find file" << endl;
+}
+}*/
