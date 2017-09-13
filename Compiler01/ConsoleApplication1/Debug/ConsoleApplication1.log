@@ -1,0 +1,4 @@
+﻿  scanner.cpp
+c:\users\khoalaz\desktop\cmpe152\compiler01\consoleapplication1\consoleapplication1\scanner.cpp(24): warning C4101: 'e': unreferenced local variable
+  ConsoleApplication1.vcxproj -> C:\Users\KhoaLaZ\Desktop\CMPE152\Compiler01\ConsoleApplication1\Debug\ConsoleApplication1.exe
+  ConsoleApplication1.vcxproj -> C:\Users\KhoaLaZ\Desktop\CMPE152\Compiler01\ConsoleApplication1\Debug\ConsoleApplication1.pdb (Partial PDB)
