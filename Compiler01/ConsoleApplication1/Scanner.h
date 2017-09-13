@@ -6,13 +6,17 @@
 
 using namespace std;
 
-class scanner
+class scanner : public source
 {
 public:
 	scanner();
-	void scanFile(string fileName);
+	token currentToken(void);
+	token nextToken(void);
+	token extractToken(void);
+	char currentChar(void);
+	char nextChar(void);
 
-private:
+protected:
 	string line;
 
 };

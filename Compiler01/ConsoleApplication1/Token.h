@@ -13,7 +13,7 @@ public:
 	char currentChar(void);
 	char nextChar(void);
 	char peekChar(void) const;
-private:
+protected:
 	string text;
 	any value;
 };

@@ -10,8 +10,7 @@ public:
 	char currentChar() const;
 	char nextChar();
 
-
-private:
+protected:
 	string line;
 	int lineNum;
 	int currentPos;

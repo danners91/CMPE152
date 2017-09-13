@@ -7,8 +7,8 @@ using namespace std;
 
 int main()
 {
-	scanner scan;
-	scan.scanFile("javatest.in");
+	//scanner scan;
+	//scan.scanFile("javatest.in");
 
 
 
