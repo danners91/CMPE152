@@ -1,11 +1,26 @@
 #include "Scanner.h"
 
+
+scanner:: scanner(source *source)
+{
+}
+
+scanner::~scanner()
+{
+}
+
+
 token scanner::currentToken(void)
 {
 	return ;
 }
 
 token scanner::nextToken(void)
+{
+	return ;
+}
+
+token scanner:: prevToken(void)
 {
 	return ;
 }
