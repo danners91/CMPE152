@@ -11,12 +11,18 @@ public:
 	source(string fileName);
 	char currentChar(void) const;
 	char nextChar(void);
-	int getLineNum(void);
-	int getCurrentPos(void);
+	char peekChar(void); //temporary function for scanner
+	void readFile(void);
+	int getLineNum(void) const;
+	int getCurrentPos(void) const;
 
-private:
-	string line;
-	ifstream file; //variable not used
+protected:
+	string getLine(void) const;
 	int lineNum;
 	int currentPos;
+	string line;
+
+private:
+	ifstream file; //variable not used
+	
 };

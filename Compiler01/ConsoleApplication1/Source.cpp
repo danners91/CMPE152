@@ -31,17 +31,35 @@ char source::nextChar(void)
 	return '0';
 }
 
+/*temporary function for token.cpp to peek the next char*/
+char source::peekChar(void)
+{
+	return '0' + 1;
+}
 
 /*Returns variable of the line number*/
-int source::getLineNum(void)
+int source::getLineNum(void) const
 {
 	return this->lineNum;
 }
 
 /*Return variable of the current position*/
-int source::getCurrentPos(void)
+int source::getCurrentPos(void) const
 {
 	return this->currentPos;
+}
+
+string source::getLine(void) const
+{
+	return this->line;
+}
+
+void source::readFile(void)
+{
+	while (getline(file, line))
+	{
+		lineNum++;
+	}
 }
 
 /*

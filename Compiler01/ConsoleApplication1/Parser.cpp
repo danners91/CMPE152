@@ -9,3 +9,4 @@ token parser::nextToken(void)
 {
 	return scanner::nextToken();
 }
+

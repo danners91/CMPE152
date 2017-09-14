@@ -11,8 +11,8 @@ using namespace std;
 class scanner : public source
 {
 protected:
-	token currentToken(void);
-	token nextToken(void);
+	virtual token currentToken(void);
+	virtual token nextToken(void);
 	token extractToken(void);
 	char currentChar(void);
 	char nextChar(void);

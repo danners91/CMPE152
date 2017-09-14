@@ -14,9 +14,9 @@ protected:
 	string text;
 	any value;
 	void extract(void);
-	char currentChar(void);
-	char nextChar(void);
-	char peekChar(void) const;
+	char currentChar(void); //done
+	char nextChar(void);	//done
+	char peekChar(void);	//done
 
 private:
 	int lineNum;
